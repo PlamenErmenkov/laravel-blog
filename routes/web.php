@@ -13,5 +13,15 @@ Route::get('/', function () {
 //  /blog/{id}/edit -> edit a single blog <-> (Only allow admins/owners to edit)
 //  /blog/{id}/delete -> delete a single blog <-> (Only allow admins/owners to delete)
 
-Route::get('/blogs', [BlogController::class, "index"]);
-Route::get('/blog/{id}', [BlogController::class, "show"]);
+// Route::get('/blogs', [BlogController::class, "index"])->name("blog.index");
+// Route::get("/blog/create", [BlogController::class,"create"])->name("blog.create");
+// Route::get('/blog/{id}', [BlogController::class, "show"])->name("blog.show");
+// Route::post('/blog', [BlogController::class,'store'])->name('blog.store');
+// Route::get('/blog/{id}/edit', [BlogController::class,'edit'])->name('blog.edit');
+// Route::patch("/blog/{id}", [BlogController::class,"update"])->name("blog.update");
+// Route::delete("/blog/{id}", [BlogController::class,"delete"])->name("blog.delete");
+
+Route::resource("/blog", BlogController::class);
+
+
+

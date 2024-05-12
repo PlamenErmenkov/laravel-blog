@@ -39,8 +39,7 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id) {
-        $blog = Blog::where('id', $id)->first();
+    public function show(Blog $blog) {
         return view("blog.show", ["blog"=> $blog]);
     }
 

@@ -1,6 +1,7 @@
-<x-layout>
-    <section>
-        <p>{{ $blog->title }}</p>
-        <p>{{ $blog->content }}</p>
-    </section>
-</x-layout>
+@extends('layouts.master')
+
+@section('title', $blog->title)
+
+@section('content')
+    <p>{{ $blog->content }}</p>
+@stop
