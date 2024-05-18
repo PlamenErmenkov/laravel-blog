@@ -8,10 +8,10 @@
     <title>@yield('title')</title>
     <!-- Tells blade php that there is a hole with the key 'title'; -->
 
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/logo.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/logo.css', 'resources/css/utility.css'])
 </head>
 
-<body>
+<body class='flex flex-col '>
     <header>
         <!-- </> -->
         <div class="text text--knockout">
@@ -25,9 +25,8 @@
         </nav>
     </header>
 
-    <main>
-        @yield('content')
-    </main>
+    @yield('main')
+
 
     <footer>
 

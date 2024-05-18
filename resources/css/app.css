@@ -33,6 +33,7 @@ body {
     color: var(--bc);
     font-family: "Roboto", serif;
     font-style: normal;
+    min-height: 100dvh;
 }
 
 header {
