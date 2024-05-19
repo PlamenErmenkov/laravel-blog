@@ -1,11 +1,4 @@
-@extends('layouts.master')
-
-@section('title', 'Blogs')
-<!-- Tells blade php to fill the hole with key 'title' wit the content of 'Blogs' -->
-
-
-@section('content')
-
+<x-guest-layout>
     <article class="blogs-heading">
         <h1>Blogs</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid laudantium, ipsam</p>
@@ -33,4 +26,4 @@
             <!-- Str::words("", count) -->
         </ul>
     </section>
-@stop
+</x-guest-layout>
