@@ -14,8 +14,9 @@ class BlogController extends Controller
     {
         // Fetch most recent 10 blogs
         $blogs = Blog::latest()->take(10)->get();
+        dd($blogs);
 
-        return view('blog.example', ["blogs"=> $blogs]);
+        return view('blog.index', ["blogs" => $blogs]);
 
 
     }
@@ -39,8 +40,9 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Blog $blog) {
-        return view("blog.show", ["blog"=> $blog]);
+    public function show(Blog $blog)
+    {
+        return view("blog.show", ["blog" => $blog]);
     }
 
     /**
