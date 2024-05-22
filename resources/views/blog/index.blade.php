@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-app-layout>
     <article class="blogs-heading">
         <h1>Blogs</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid laudantium, ipsam</p>
@@ -23,7 +23,6 @@
                 </li>
             @endforeach
 
-            <!-- Str::words("", count) -->
         </ul>
     </section>
-</x-guest-layout>
+</x-app-layout>
